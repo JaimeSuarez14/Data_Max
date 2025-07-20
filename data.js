@@ -23,14 +23,14 @@ export const productos = [
     {
         id: 'PROD000004',
         nombre: 'iPhone 16 pro max 128Gb Negro',
-        precio: 1150.0,
+        precio: 4950.0,
         imagen: 'IMG/PROD000004.png',
         descripcion: 'Pantalla Super Retina XDR, chip A17, Face ID, cámara avanzada y diseño elegante.'
     },
     {
         id: 'PROD000005',
         nombre: 'iPhone 16 128Gb Blanco',
-        precio: 220.0,
+        precio: 2800.0,
         imagen: 'IMG/PROD000005.png',
         descripcion: 'Pantalla Liquid Retina HD, chip A16, Face ID, cámara dual y acabado en blanco.'
     },
