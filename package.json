@@ -1,0 +1,23 @@
+{
+  "name": "trabajo_diseno",
+  "version": "1.0.0",
+  "description": "trabajo universidad",
+  "keywords": [
+    "proyecto"
+  ],
+  "homepage": "https://github.com/George-Iron/Trabajo_de_Dise-o#readme",
+  "bugs": {
+    "url": "https://github.com/George-Iron/Trabajo_de_Dise-o/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/George-Iron/Trabajo_de_Dise-o.git"
+  },
+  "license": "ISC",
+  "author": "jaime",
+  "type": "module",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

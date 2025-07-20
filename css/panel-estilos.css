@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.tablero-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.thead-dark {
+    background-color: #343a40;
+    color: white;
+}

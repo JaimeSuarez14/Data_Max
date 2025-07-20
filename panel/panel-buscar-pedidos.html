@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Pedidos - Panel de Control</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/panel-estilos.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="panel.html">Panel de Control</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#panelNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="panelNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="panel-listar-productos.html">Listar</a></li>
+                            <li><a class="dropdown-item" href="panel-agregar-producto.html">Agregar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Pedidos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="panel-gestion-pedidos.html">Gestionar Pedidos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="../index.html" class="btn btn-outline-light">Salir</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="card-title">Búsqueda Avanzada de Pedidos</h5>
+            </div>
+            <div class="card-body">
+                <form id="buscarPedidosForm">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="numeroPedido" class="form-label">Número de Pedido</label>
+                            <input type="text" class="form-control" id="numeroPedido" placeholder="Ej: PED001">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="documentoCliente" class="form-label">DNI/RUC Cliente</label>
+                            <input type="text" class="form-control" id="documentoCliente" placeholder="Ingrese DNI o RUC">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="fechaDesde" class="form-label">Fecha Desde</label>
+                            <input type="date" class="form-control" id="fechaDesde">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="fechaHasta" class="form-label">Fecha Hasta</label>
+                            <input type="date" class="form-control" id="fechaHasta">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="estadoPedido" class="form-label">Estado del Pedido</label>
+                            <select class="form-select" id="estadoPedido">
+                                <option value="">Todos</option>
+                                <option value="pendiente">Pendiente</option>
+                                <option value="en_proceso">En Proceso</option>
+                                <option value="enviado">Enviado</option>
+                                <option value="entregado">Entregado</option>
+                                <option value="cancelado">Cancelado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="metodoPago" class="form-label">Método de Pago</label>
+                            <select class="form-select" id="metodoPago">
+                                <option value="">Todos</option>
+                                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                                <option value="transferencia">Transferencia Bancaria</option>
+                                <option value="efectivo">Efectivo</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="montoMinimo" class="form-label">Monto Mínimo</label>
+                            <div class="input-group">
+                                <span class="input-group-text">S/.</span>
+                                <input type="number" class="form-control" id="montoMinimo" placeholder="0.00">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="reset" class="btn btn-secondary">
+                            <i class="fas fa-undo"></i> Limpiar Filtros
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </div>
+                </form>
+
+                <hr>
+
+                <!-- Resultados de la búsqueda -->
+                <div class="table-responsive mt-4">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>N° Pedido</th>
+                                <th>Fecha</th>
+                                <th>Cliente</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultadosBusquedaTableBody">
+                            <!-- Los resultados se cargarán dinámicamente aquí -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Paginación -->
+                <nav aria-label="Navegación de páginas" class="mt-4">
+                    <ul class="pagination justify-content-center" id="paginacionBusqueda">
+                        <!-- La paginación se generará dinámicamente -->
+                    </ul>
+                </nav>
+
+                <!-- Botones de exportación -->
+                <div class="d-flex justify-content-end mt-3">
+                    <button class="btn btn-success me-2" id="exportarExcel">
+                        <i class="fas fa-file-excel"></i> Exportar a Excel
+                    </button>
+                    <button class="btn btn-danger" id="exportarPDF">
+                        <i class="fas fa-file-pdf"></i> Exportar a PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/panel-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.producto-img {
+  height: 170px;
+  object-fit: contain;
+}
+
+.modal-img-grande {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
