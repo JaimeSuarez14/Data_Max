@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         header.innerHTML = `<nav class="navbar navbar-expand-lg" style="background-color:rgb(5, 86, 207);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="IMG/iron.png" alt="Logo" style="background-size: cover; width: 40px;"><span class="fw-bold text-white">Data Max</span>
+                    <img src="imagenes/logoDataMax.svg" alt="Logo" style="background-size: cover; width: 60px;"><span class="fw-bold text-white">Data Max</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
