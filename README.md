@@ -66,3 +66,5 @@ Esto abrirá el proyecto en tu navegador web predeterminado.
 4.  Ve a la sección del carrito para ver los productos agregados.
 5.  Puedes eliminar productos del carrito si lo deseas.
 6.  El total del carrito se actualizará dinámicamente.
+7.  Puedes finalizar la compra y ver un mensaje de confirmación.
+8. Inicia sesión con tu usuario y contraseña para acceder a más funcionalidades.
