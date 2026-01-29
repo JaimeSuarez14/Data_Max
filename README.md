@@ -1,23 +1,31 @@
---
+---
 
 <div align="center">
 
 # Data_Max
+
 Carrito de Compras de Data Max
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+
+[![npm version](https://img.shields.io/npm/v/badge-maker.svg)](https://npmjs.org/package/badge-maker) 
+![github logo](https://img.shields.io/badge/github-repo-blue?logo=github)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react)
+![Node](https://img.shields.io/badge/Node.js-339933?logo=node.js)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker)
+
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS3">
 <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
 
 </div>
 
---
+---
 
 ## 🚀 Descripción
 
 Este proyecto es una aplicación de carrito de compras simple creada con HTML, CSS y JavaScript. Permite a los usuarios ver una lista de productos, agregarlos a un carrito de compras y ver el total del carrito.
 
---
+---
 
 ## 🌟 Características
 
@@ -26,7 +34,7 @@ Este proyecto es una aplicación de carrito de compras simple creada con HTML, C
 *   Cálculo dinámico del total del carrito.
 *   Uso de Módulos de ES para una mejor organización del código.
 
---
+---
 
 ## 🔧 Instalación y Ejecución
 
@@ -54,7 +62,7 @@ Para ejecutar este proyecto localmente, necesitarás tener [Node.js](https://nod
 
 Esto abrirá el proyecto en tu navegador web predeterminado.
 
---
+---
 
 ## 📝 Uso
 - Usuario Demo: jaime
@@ -68,3 +76,5 @@ Esto abrirá el proyecto en tu navegador web predeterminado.
 6.  El total del carrito se actualizará dinámicamente.
 7.  Puedes finalizar la compra y ver un mensaje de confirmación.
 8. Inicia sesión con tu usuario y contraseña para acceder a más funcionalidades.
+
+---
