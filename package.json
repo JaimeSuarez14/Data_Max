@@ -5,19 +5,23 @@
   "keywords": [
     "proyecto"
   ],
-  "homepage": "https://github.com/George-Iron/Trabajo_de_Dise-o#readme",
+  "homepage": "https://github.com/JaimeSuarez14/Data_Max",
   "bugs": {
-    "url": "https://github.com/George-Iron/Trabajo_de_Dise-o/issues"
+    "url": "https://github.com/JaimeSuarez14/Data_Max/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/George-Iron/Trabajo_de_Dise-o.git"
+    "url": "git+https://github.com/JaimeSuarez14/Data_Max.git"
   },
   "license": "ISC",
   "author": "jaime",
   "type": "module",
   "main": "index",
   "scripts": {
+    "start": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
